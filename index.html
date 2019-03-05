@@ -1,13 +1,120 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Change Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Write your markup here -->
+    <div class="container main-wrapper">
+      <h1 class="center-align">Change Calculator</h1>
 
-    <!-- Don't forget to add your <script> tag here -->
+      <form>
+        <div class="row">
+          <div class="input-field col s6">
+            <input type="text" id="amount-due" placeholder="$" required />
+            <label for="amount-due">Amount Due</label>
+          </div>
 
+          <div class="input-field col s6">
+            <input type="text" id="amount-received" placeholder="$" required />
+            <label for="amount-received">Amount Received</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12 center-align">
+            <button
+              class="deep-purple accent-1 waves-effect waves-light btn"
+              id="calculate-change"
+            >
+              Calculate Change
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <div class="row">
+        <div class="col s12">
+          <div class="card purple darken-4">
+            <div class="card-content white-text">
+              <span class="card-title center-align">Dollars</span>
+              <p class="center-align" id="dollars-output"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s3">
+          <div class="card purple darken-4">
+            <div class="card-content white-text">
+              <span class="card-title center-align">Quarters</span>
+              <p class="center-align" id="quarters-output"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s3">
+          <div class="card purple darken-4">
+            <div class="card-content white-text">
+              <span class="card-title center-align">Dimes</span>
+              <p class="center-align" id="dimes-output"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s3">
+          <div class="card purple darken-4">
+            <div class="card-content white-text">
+              <span class="card-title center-align">Nickels</span>
+              <p class="center-align" id="nickels-output"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s3">
+          <div class="card purple darken-4">
+            <div class="card-content white-text">
+              <span class="card-title center-align">Pennies</span>
+              <p class="center-align" id="pennies-output"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div>
+        <h3>Dollars:</h3>
+        <p id="dollars-output"></p>
+      </div>
+
+      <div>
+        <h3>Quarters:</h3>
+        <p id="quarters-output"></p>
+      </div>
+
+      <div>
+        <h3>Dimes:</h3>
+        <p id="dimes-output"></p>
+      </div>
+
+      <div>
+        <h3>Nickels:</h3>
+        <p id="nickels-output"></p>
+      </div>
+
+      <div>
+        <h3>Pennies:</h3>
+        <p id="pennies-output"></p>
+      </div> -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 </html>
